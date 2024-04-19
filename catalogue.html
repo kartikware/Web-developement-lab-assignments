@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Catalog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://thumbs.dreamstime.com/b/light-gray-stationery-random-background-seamless-pattern-design-school-education-vector-illustration-116280985.jpg');
+        }
+        .container {
+            max-width: 1600px;
+            margin: 80px auto 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .highlight:hover {
+            border: 2px solid rgb(237, 119, 7); /* Change the border color and width */
+            box-shadow: 0px 14px 18px 18px rgba(4, 234, 35, 0.1);
+        }
+        .book {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .book h2 {
+            margin-top: 0;
+        }
+        .book p {
+            margin-bottom: 10px;
+        }
+        .book button {
+            padding: 10px 20px;
+            background-color: #09eb54;
+            border: none;
+            color: rgb(13, 2, 2);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+        <ul>
+            <li><a href="index.html"><h2>Home</h2></a></li>
+            <li><a href="catalogue.html" class="current">Catalogue</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+        <ul>
+            <li><a href="registration.html"><h2>Register Yourself</h2> </a></li>
+            <li><a href="login.html"><h2>Login</h2></a></li>
+        </ul>
+        </div>
+        
+    </nav>
+    <div class="container">
+        <div class="book highlight">
+            <img src="https://m.media-amazon.com/images/I/71XqqKTZz7L._AC_UF1000,1000_QL80_.jpg" alt="Book 1">
+            <h2>Harry Potter and the Sorcerer's Stone</h2>
+            <p>Author: J.K. Rowling</p>
+            <p>Price: ₹999</p>
+            <p>Description: The first book in the beloved Harry Potter series introduces readers to the magical world of Hogwarts School of Witchcraft and Wizardry and follows the adventures of Harry Potter, an orphaned boy who discovers he is a wizard.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book highlight">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kjkbv680-0/book/p/r/m/wings-of-fire-original-imafz3pawzphkecj.jpeg?q=90&crop=false" alt="Book 2">
+            <h2>Title: Wings of Fire</h2>
+            <p>Author: Dr. A.P.J. Abdul Kalam, with Arun Tiwari</p>
+            <p>Price: ₹199</p>
+            <p>Description: In this autobiography, Dr. Kalam narrates his life journey, from his humble beginnings in Rameswaram, Tamil Nadu, to becoming one of India's most respected scientists and eventually serving as the President of the country. </p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book highlight">
+            <img src="https://m.media-amazon.com/images/I/61I24wOsn8L._AC_UF1000,1000_QL80_.jpg" alt="Book 3">
+            <h2>Title: The Hunger Games</h2>
+            <p>Author:Suzanne Collins</p>
+            <p>Price: ₹420</p>
+            <p>Description: Set in a dystopian future where the government forces children to participate in a televised fight to the death, "The Hunger Games" follows sixteen-year-old Katniss Everdeen as she volunteers to take her sister's place in the brutal competition..</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book highlight">
+            <img src="https://m.media-amazon.com/images/I/71Nes-1tfPL._AC_UF1000,1000_QL80_.jpg" alt="Book 3">
+            <h2>Title: The White Tiger</h2>
+            <p>Author: Aravind Adiga</p>
+            <p>Price: ₹399</p>
+            <p>Description: "The White Tiger" is a darkly comic and biting satire of modern India's socioeconomic disparities. The novel follows Balram Halwai, a poor villager who rises from servant to entrepreneur through cunning and ruthlessness. </p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book highlight">
+            <img src="https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg" alt="Book 3">
+            <h2>Title:To Kill a Mockingbird</h2>
+            <p>Author:Harper Lee</p>
+            <p>Price: ₹199</p>
+            <p>Description: Set in the American South during the 1930s, "To Kill a Mockingbird" tells the story of Scout Finch, a young girl growing up in a racially divided society. The novel explores themes of racial injustice, morality, and compassion through the lens of Scout's experiences.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book highlight">
+            <img src="https://m.media-amazon.com/images/I/71y1NKGcGKL._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="Book 3">
+            <h2>Title: The 7 Habits of Highly Effective People</h2>
+            <p>Author: Stephen R. Covey</p>
+            <p>Price: ₹699</p>
+            <p>Description: In this influential book, Covey presents a holistic approach to personal and professional effectiveness based on timeless principles. He outlines seven habits that can help individuals achieve their goals, improve their relationships, and lead a more fulfilling life. </p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://thumbs.dreamstime.com/b/light-gray-stationery-random-background-seamless-pattern-design-school-education-vector-illustration-116280985.jpg');
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .featured-books {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .book {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .book h3 {
+            margin-top: 0;
+        }
+        .book p {
+            margin-bottom: 10px;
+        }
+        .book button {
+            padding: 10px 20px;
+            background-color: #09eb54;
+            border: none;
+            color: rgb(13, 2, 2);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        .highlight:hover {
+            border: 2px solid rgb(206, 233, 178); /* Change the border color and width */
+            box-shadow: 0px 14px 18px 18px rgba(4, 234, 35, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Online Book Store</h1>
+            <p>Explore our vast collection of books</p>
+        </header>
+    </div>
+    
+    <nav>
+        <div class="left">
+        <ul>
+            <li><a href="index.html"><h2>Home</h2></a></li>
+            <li><a href="catalogue.html"><h2>Catalogue</h2></a></li>
+            <li class="search-bar"><i class="a-icon a-icon-search"></i><input type="search" placeholder="Book name or Keyword" name="query" spellcheck="true" class="a-input-text help-search-input"/></li>
+            </ul>
+        </div>
+
+        <div class="right">
+        <ul>
+            <li><a href="registration.html"><h2>Register Yourself</h2> </a></li>
+            <li><a href="login.html"><h2>Login</h2></a></li>
+        </ul>
+        </div>
+        
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <p>Explore our wide selection of books and find your next favorite read.</p>
+            <h2>Featured Books</h2>
+            <div class="featured-books">
+                <div class="book highlight">
+                    <img src="https://m.media-amazon.com/images/I/813haGpvteL._AC._SR360,460.jpg" alt="Book 1">
+                    <h3>Title:She’ll Never Make It  </h3>
+                    <p>Author: moosam minawala</p>
+                    <p>Price: ₹299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book highlight">
+                    <img src="https://m.media-amazon.com/images/I/71MI3NsFZsL._AC._SR360,460.jpg" alt="Book 2">
+                    <h3>Title:Knife : Meditations after an Attempted Murder</h3>
+                    <p>Author:salman rushdie</p>
+                    <p>Price: ₹399</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book highlight">
+                    <img src="https://m.media-amazon.com/images/I/81ZIPD-q6cL._AC._SR360,460.jpg" alt="Book 3">
+                    <h3>The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life Paperback – 9 April 2024</h3>
+                    <p>Author:Robin sharma</p>
+                    <p>Price: ₹249</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

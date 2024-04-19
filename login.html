@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+          background-image: url('https://thumbs.dreamstime.com/b/light-gray-stationery-random-background-seamless-pattern-design-school-education-vector-illustration-116280985.jpg');
+          background-repeat:repeat;
+          background-position: center;
+          background-size: auto;
+      }
+      .login-container {
+          width: 400px;
+          margin: 300px auto 0 auto; 
+          background-color: white;
+          border-radius: 10px;
+          padding: 40px;
+          box-shadow: 0px 14px 18px 18px rgba(4, 234, 35, 0.1);
+      }
+
+      input[type="text"],
+      input[type="password"],
+      button {
+          width: 100%;
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          font-size: 20px;
+      }
+
+      button {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+          background-color: #45a049;
+      }
+
+      .login-message {
+          text-align: center;
+          display: none;
+          margin-top: 20px;
+      }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <div class="left">
+    <ul>
+        <li><a href="index.html"><h2>Home</h2></a></li>
+        <li><a href="catalogue.html"><h2>Catalogue</h2></a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+    <ul>
+        <li><a href="registration.html"><h2>Register Yourself</h2> </a></li>
+        <li><a href="login.html" class="current">Login</a></li>
+    </ul>
+    </div>
+    
+</nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form >
+            <input type="text" name="username" placeholder="Username" title="Username should be at least 4 characters long.">
+            <input type="password" name="password" placeholder="Password" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

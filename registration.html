@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSA Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://thumbs.dreamstime.com/b/light-gray-stationery-random-background-seamless-pattern-design-school-education-vector-illustration-116280985.jpg');
+            background-repeat:repeat;
+            background-position: center;
+            background-size: auto;
+        }
+     
+        .form-container {
+            width: 600px;
+            margin: 100px auto 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 14px 18px 18px rgba(4, 234, 35, 0.1);
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #2f0578;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+            width: calc(100% - 30px);
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 49%;
+            padding: 15px 0;
+            background-color: #09eb54;
+            border: none;
+            color: rgb(13, 2, 2);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="reset"] {
+            background-color: #eaf0ec;
+            color: #000;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #08c944;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+        <ul>
+            <li><a href="index.html"><h2>Home</h2></a></li>
+            <li><a href="catalogue.html"><h2>Catalogue</h2></a></li>
+            </ul>
+        </div>
+    
+        <div class="right">
+        <ul>
+            <li><a href="registration.html" class="current">Register Yourself</a></li>
+            <li><a href="login.html"><h2>Login</h2></a></li>
+        </ul>
+        </div>
+        
+    </nav>
+    <div class="form-container">
+        <h1 style="text-align:center;">Registration Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Birth Date:</td>
+                    <td><input type="date" name="birthdate" required></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td><input type="text" name="qualification" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments:</td>
+                    <td><textarea name="comments" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Attach Photo:</td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
